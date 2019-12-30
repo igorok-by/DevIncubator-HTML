@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DevIncubator</title>
+</head>
+
+<body>
+  <!-- Set of icons -->
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="icon-menu" viewBox="0 0 30 21">
+        <path d="M1.5 17h27a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-27A1.5 1.5 0 0 1 0 19.5v-1A1.5 1.5 0 0 1 1.5 17z" />
+        <path d="M1.5 9h27a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-27A1.5 1.5 0 0 1 0 11.5v-1A1.5 1.5 0 0 1 1.5 9z" />
+        <path d="M1.5 0h27A1.5 1.5 0 0 1 30 1.5v1A1.5 1.5 0 0 1 28.5 4h-27A1.5 1.5 0 0 1 0 2.5v-1A1.5 1.5 0 0 1 1.5 0z" />
+      </symbol>
+    </defs>
+  </svg><!-- end Set of icons -->
+
+<!-- 
+  <span class="navbar-toggler-icon">
+    <svg><use xlink:href="#icon-menu"></use></svg>
+  </span>
+-->
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="row__col row__col--sp-between">
+          <a href="#" class="logo">Sh<span>o</span>pno</a>
+          <a href="#" class="btn btn--menu">
+            <svg><use xlink:href="#icon-menu"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header><!-- end Header -->
+
+  <!-- main wrapper -->
+  <main>
+    <!-- Section: Banner-Top -->
+    <section class="section section--grey">
+      <div class="container">
+        <div class="row">
+          <div class="row__col">
+            <h1 class="section__title section__title--main">Say Hello to <span>Shopno!</span><br>
+            <span>Agency</span> Corporate Shopno Theme</h1>
+            <a href="#" class="btn btn--light btn--centered">Contact us</a>
+            <div class="section__decor section__decor--juice"></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- end Section: Banner-Top -->
+
+  </main><!-- end main wrapper -->
+
+  <!-- Footer -->
+  <!-- <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4 col-xl-3 d-flex d-lg-block flex-column align-items-center mb-5 mb-lg-0">
+          <div class="footer__logo"></div>
+          <div class="footer__contacts">
+            <div class="footer__icon-adress"></div>
+            <div class="footer__adress">
+              <p>ул. Волочаевская, 8г</p>
+              <p>тел.: (4212) 25-30-85</p>
+              <p class="footer__tel2">(4212) 470-300</p>
+            </div>
+          </div>
+          <a href="http://web-alt.ru/page/contacts" class="footer__map">
+            <div class="footer__icon-map"></div>
+            <div class="footer__icon-arrow"></div>
+            <p class="footer__map-descr">Найдите нас на карте</p>
+          </a>
+        </div>
+        <div class="col-12 col-lg-4 col-xl-5 px-lg-0 mb-5 mb-lg-0">
+          <form action="/" method="POST" class="form">
+            <h3 class="form__title form__title--footer">Оставьте заявку или напишите вопрос и получите <span>бесплатную консультацию</span> специалиста!</h3>
+            <div class="form__wrap">
+              <div class="form__input-wrap form__input-wrap--w100">
+                <input type="text" id="consult_name" class="form__input form__input--footer" placeholder="Ваше имя" required>
+                <label for="consult_name" class="form__icon form__icon--name"></label>
+                <p class="form__asterisk">*</p>
+              </div>
+            </div>
+            <div class="form__wrap">
+              <div class="form__input-wrap form__input-wrap--w100">
+                <input type="text" id="consult_email" class="form__input form__input--footer" placeholder="Ваш e-mail" required>
+                <label for="consult_email" class="form__icon form__icon--mail"></label>
+                <p class="form__asterisk">*</p>
+              </div>
+              <div class="form__input-wrap form__input-wrap--w100">
+                <input type="text" id="consult_tel" class="form__input form__input--footer" placeholder="Ваш телефон" required>
+                <label for="consult_tel" class="form__icon form__icon--phone"></label>
+                <p class="form__asterisk">*</p>
+              </div>
+            </div>
+            <div class="form__wrap">
+              <div class="form__input-wrap form__input-wrap--w100">
+                <textarea class="form__textarea form__textarea--footer" placeholder="Текст сообщения"></textarea>
+                <p class="form__asterisk">*</p>
+              </div>
+            </div>
+            <div class="form__wrap justify-content-center justify-content-lg-end">
+              <button type="submit" class="button button--warn-lg button--empty">Отправить</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-lg-4 d-flex d-lg-block flex-column align-items-center">
+          <a href="#" class="footer__fb"></a>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/web_alternative/" class="footer__socials-inst"></a>
+            <a href="https://www.facebook.com/webalt/" class="footer__socials-fb"></a>
+            <a href="https://vk.com/webaltru" class="footer__socials-vk"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+  <!-- end Footer -->
+</body>
+</html>

@@ -1,0 +1,68 @@
+.button {
+  width: 100%;
+  padding: 15px 15px 13px;
+  font-size: 20px;
+  font-weight: 300;
+  color: $default-color;
+  text-transform: uppercase;
+  border: none;
+  transition: $default-transition;
+
+  $btnHeight: 45px;
+
+  &:hover {
+    color: $mainFontColor;
+    text-decoration: none;
+    transition: $default-transition;
+  }
+
+  &--warn-lg {
+    max-width: 161px;
+    height: $btnHeight;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 0;
+    background-color: $warning-color;
+  }
+
+  &--light {
+    max-width: 230px;
+    color: $mainFontColor;
+    background-color: $default-color;
+  }
+
+  &--centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--link {
+    text-align: center;
+    line-height: $btnHeight;
+  }
+
+  &--empty {
+    border: 1px solid $default-color;
+    background-color: transparent;
+  }
+
+  &--empty:hover {
+    border: 1px solid $warning-color;
+    color: $warning-color;
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+
+    &--warn-lg {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &--link,
+    &--empty {
+      max-width: 161px;
+    }
+  }
+}

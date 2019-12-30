@@ -1,0 +1,132 @@
+.footer {
+  margin-top: 55px;
+  padding-top: 40px;
+  padding-bottom: 75px;
+  font-weight: 300;
+  color: #aaa9a9;
+  background-color: $dark-bckgr;
+
+  &__logo {
+    margin-bottom: 25px;
+
+    @extend %logo-color-3;
+  }
+
+  &__contacts {
+    display: flex;
+    margin-left: 15px;
+  }
+  
+  &__icon-adress {
+    margin-top: 8px;
+    margin-right: 20px;
+
+    @extend %icon-adress;
+  }
+
+  &__adress {
+    font-size: rem(16);
+  }
+
+  &__adress p {
+    margin-bottom: 0;
+  }
+
+  &__tel2 {
+    margin-left: rem(35);
+  }
+
+  &__map {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    color: #aaa9a9;
+    transition: $default-transition;
+  }
+
+  &__icon-map {
+    margin-right: 14px;
+    filter: grayscale(1);
+    opacity: 0.5;
+    transition: $default-transition;
+    
+    @extend %footer-1;
+  }
+  
+  &__icon-arrow {
+    margin-right: 7px;
+    filter: grayscale(1);
+    opacity: 0.5;
+    transition: $default-transition;
+    
+    @extend %icon-arrMap;
+  }
+
+  &__map:hover &__icon-map,
+  &__map:hover &__icon-arrow,
+  &__fb:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+  
+  &__map-descr {
+    max-width: 85px;
+    margin-bottom: 0;
+    font-size: rem(14);
+    text-align: center;
+  }
+
+  &__map:hover {
+    color: #dedcdc;
+    text-decoration: none;
+  }
+
+  &__fb {
+    float: right;
+    width: 285px;
+    height: 276px;
+    margin-bottom: 17px;
+    background: center no-repeat url(/assets/img/footer-2.png);
+    opacity: 0.5;
+    transition: $default-transition;
+  }
+
+  &__socials {
+    float: right;
+    display: flex;
+  }
+
+  &__socials-inst,
+  &__socials-fb,
+  &__socials-vk {
+    display: block;
+    margin-left: 14px;
+  }
+
+  &__socials-inst {
+    @extend %icon-inst;
+  }
+
+  &__socials-fb {
+    @extend %icon-fb;
+  }
+
+  &__socials-vk {
+    @extend %icon-vk;
+  }
+
+  @media screen and (max-width: $smDesktopWidth) {
+   
+    &__fb,
+    &__socials {
+      float: none;
+    }
+    
+    &__socials-inst,
+    &__socials-fb,
+    &__socials-vk {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+// Font
+$mainFont                : 'Raleway', Helvetica, Arial, sans-serif;
+$secondFont              : 'Montserrat', Arial, sans-serif;
+$thirdFont               : 'Merriweather', Georgia, serif;
+
+
+// Size
+$mainFontColor           : rgba(0, 0, 0, 0.75);
+$mainFontSize            : 16px;
+$mainFontWeight          : 400;
+$mainLineHeight          : 1.2;
+
+$lgDesktopWidth          : 1440px;
+$desktopWidth            : 1200px;
+$smDesktopWidth          : 992px;
+$tableWidth              : 768px;
+$phoneWidth              : 576px;
+$smPhoneWidth            : 320px;
+
+
+$grid-gutter-width       : 14px;
+$grid-breakpoints        : (xs: 0,
+                            sm: 576px,
+                            md: 768px,
+                            lg: 992px,
+                            xl: 1200px);
+
+$container-max-widths    : (sm: 540px,
+                            md: 720px,
+                            lg: 960px,
+                            xl: 1154px);
+
+
+// Main color
+$dark-color              : #000;
+$default-color           : #fff;
+$primary-color           : #108be9;
+$success-color           : #6df6eb;
+$danger-color            : #ff005d;
+$warning-color           : #df7f35;
+
+// Background
+$primary-bckgr           : #fefefe;
+$default-bckgr           : #f7f7fc;
+$warning-bckgr           : #fc0;
+$dark-bckgr              : #393939;
+$hover-bckgr             : #1c1a1a;
+
+// Neutral Color
+$neutral-primary         : #595666;
+$neutral-regular         : #121212;
+$neutral-secondary       : #AEAEAE;
+$neutral-placeholder     : #CACACA;
+
+// Border Color
+$border-base             : #DCDFE6;
+$border-light            : #E4E7ED;
+$border-lighter          : #EBEEF5;
+$border-lightex          : #F2F6FC;
+
+// Transition
+$default-transition      : all .3s cubic-bezier(0.25, 0.1, 0.25, 1);
+$long-transition      : all .8s cubic-bezier(0.25, 0.1, 0.25, 1);

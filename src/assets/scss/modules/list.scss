@@ -1,0 +1,43 @@
+.list {
+  margin-bottom: 0;
+  padding-left: 35px;
+  list-style-type: none;
+
+  &__item {
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: rem(2);
+    left: -35px;
+    width: rem(16);
+    height: rem(16);
+    border-radius: 50%;
+  }
+  
+  &__item--warning::before {
+    background-color: $warning-color;
+  }
+  
+  &__item--primary::before {
+    background-color: $primary-color;
+  }
+  
+  &__item-title {
+    margin-bottom: 0;
+    font-size: rem(16);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  &__item-descr {
+    margin-bottom: 0;
+    font-size: rem(14);
+  }
+}

@@ -1,0 +1,16 @@
+.link {
+  
+  &--nav {
+    display: block;
+    padding: 15px 26px;
+    color: $default-color;
+    text-align: right;
+    transition: $default-transition;
+  }
+  
+  &--nav:hover {
+    background-color: $hover-bckgr;
+    color: $default-color;
+    text-decoration: none;
+  }
+}

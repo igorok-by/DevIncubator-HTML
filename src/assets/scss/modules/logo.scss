@@ -1,0 +1,25 @@
+.logo {
+  width: 113px;
+  height: 46px;
+  color: $dark-color;
+  font-family: $secondFont;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 1.02px;
+  text-shadow: 0 0 2px rgba(21, 21, 22, 0.75);
+  text-transform: uppercase;
+  text-align: center;
+  border: 6px solid #170f1c;
+  transition: $long-transition;
+  
+  span {
+    color: #77efe5;
+    font-size: 21px;
+    letter-spacing: 1.26px;
+  }
+  
+  &:hover {
+    color: #77efe5;
+  }
+}

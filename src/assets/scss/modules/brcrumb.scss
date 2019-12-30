@@ -1,0 +1,25 @@
+.brcrumb {
+  
+  &__item {
+    color: #7e7e7e;
+    transition: $default-transition;
+  }
+
+  &__item:not(.brcrumb__item--active):hover {
+    color: $warning-color;
+    text-decoration: none;
+  }
+  
+  &__item--active {
+    color: $default-color;
+  }
+
+  &__item::after {
+    content: "|";
+    margin-left: rem(3);
+  }
+
+  &__item--active::after {
+    content: "";
+  }
+}

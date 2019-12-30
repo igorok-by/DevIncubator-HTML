@@ -1,0 +1,65 @@
+// Bootstrap 4
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Utils
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+@import "utils/sprites";
+
+html {
+  line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+		font-size: 14px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 13px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    // font-size: 12px;
+  }
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: $mainLineHeight;
+  font-family: $mainFont;
+	font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $mainFontColor;
+  background-color: $default-color;
+}
+
+
+// Modules
+
+@import "modules/btn";
+@import "modules/container";
+@import "modules/logo";
+@import "modules/row";
+
+
+@import "modules/header";
+@import "modules/section";
+@import "modules/link";
+@import "modules/banner";
+@import "modules/brcrumb";
+@import "modules/form";
+@import "modules/text";
+@import "modules/tile";
+@import "modules/button";
+@import "modules/list";
+@import "modules/decor";
+@import "modules/carousel";
+@import "modules/footer";

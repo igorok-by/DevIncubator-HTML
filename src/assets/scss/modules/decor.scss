@@ -1,0 +1,12 @@
+.decor {
+
+  &--centerize {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--callme {
+    height: 52px;
+    background: center / cover no-repeat url(/assets/img/callme-1.png);
+  }
+}

@@ -1,0 +1,20 @@
+.row {
+
+  @include make-row();
+
+  &__col {
+    @include make-col-ready();
+    @include make-col-auto();
+    width: 100%;
+  }
+
+  &__col--6 {
+    @include make-col(6);
+  }
+
+  &__col--sp-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
