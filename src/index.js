@@ -7,9 +7,10 @@ import $ from 'jquery';
 global.jQuery = $;
 global.$ = $;
 
-// OWL CAROUSEL
-// import 'owl.carousel/dist/assets/owl.carousel.min.css'
-// import 'owl.carousel/dist/owl.carousel'
+// SLICK CAROUSEL
+import 'slick-carousel'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 // JS
 import './js/'

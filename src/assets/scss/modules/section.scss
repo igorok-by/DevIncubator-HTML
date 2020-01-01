@@ -1,22 +1,37 @@
 .section {
   padding-top: 8.7vw;
-  padding-bottom: 13.54vw;
+  padding-bottom: 8.7vw;
+
+  &--pb195 {
+    padding-bottom: 13.54vw;
+  }
+
+  &--pb85 {
+    padding-bottom: 5.9vw;
+  }
 
   &--grey {
     background-color: rgba(239, 240, 242, 0.99);
   }
+
+  &--light {
+    background-color: #f8fafa;
+  }
+
+  &--lighter {
+    background-color: #f9fbfb;
+  }
   
   &__title {
-    color: #505050;
+    padding-bottom: rem(15);
+    color: rgba($color: $dark-color, $alpha: .9);
+    font-size: rem(38);
     font-family: $secondFont;
-    font-size: rem(45);
     font-weight: 700;
-    line-height: rem(55);
-    letter-spacing: rem(2.7);
+    letter-spacing: rem(2.28);
     text-transform: uppercase;
     text-align: center;
-    text-shadow: rem(4) rem(8) rem(10) rgba(0, 0, 0, 0.24);
-
+    
     span {
       display: inline-block;
       padding-right: rem(14);
@@ -24,10 +39,24 @@
       background-color: rgba(118, 244, 234, 0.5);
     }
   }
-
+  
   &__title--main {
     padding-top: 1.4vw;
     padding-bottom: 10vw;
+    color: #505050;
+    font-size: rem(45);
+    line-height: rem(55);
+    letter-spacing: rem(2.7);
+    text-shadow: rem(4) rem(8) rem(10) rgba(0, 0, 0, 0.24);
+  }
+  
+  &__subtitle {
+    color: rgba($color: $dark-color, $alpha: .62);
+    font-family: $thirdFont;
+    font-size: rem(18);
+    text-transform: uppercase;
+    letter-spacing: rem(1.08);
+    text-align: center;
   }
 
   &__decor {

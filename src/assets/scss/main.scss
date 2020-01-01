@@ -10,6 +10,7 @@
 @import "utils/fonts";
 @import "utils/reset";
 @import "utils/sprites";
+@import "utils/animation";
 
 html {
   line-height: $mainLineHeight;
@@ -45,21 +46,21 @@ body {
 // Modules
 
 @import "modules/btn";
+@import "modules/carousel";
 @import "modules/container";
-@import "modules/logo";
-@import "modules/row";
-
-
 @import "modules/header";
+@import "modules/logo";
+@import "modules/popup";
+@import "modules/row";
 @import "modules/section";
+@import "modules/text";
+@import "modules/tile";
+
+
 @import "modules/link";
 @import "modules/banner";
 @import "modules/brcrumb";
 @import "modules/form";
-@import "modules/text";
-@import "modules/tile";
-@import "modules/button";
 @import "modules/list";
 @import "modules/decor";
-@import "modules/carousel";
 @import "modules/footer";
