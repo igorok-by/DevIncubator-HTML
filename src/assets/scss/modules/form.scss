@@ -1,128 +1,63 @@
 .form {
+  height: 100%;
+  padding: 1.05vw 2.1vw 2.65vw;
+  box-shadow: 0 0 rem(30) rgba(21, 21, 21, 0.12);
+  background-color: rgba(#021623, 0.71);
 
-  &__wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: -6px;
-    margin-right: -6px;
-  }
-  
-  &__title {
-    margin-bottom: 15px;
-    font-family: $secondFont;
-    font-size: rem(20);
-    text-align: center;
-
-    span {
-      text-transform: uppercase;
-    }
-  }
-
-  &__title--footer {
-    font-family: $mainFont;
-    font-weight: 100;
-    color: $default-color;
-    text-align: left;
-
-    span {
-      font-weight: 400;
-    }
-  }
-
-  &__input-wrap {
-    position: relative;
-    width: 100%;
-    max-width: 217px;
-    margin-bottom: 17px;
-    padding-left: 6px;
-    padding-right: 6px;
-  }
-
-  &__input-wrap--w100 {
-    max-width: unset;
+  &--mr13 {
+    margin-right: 0.9vw;
   }
 
   &__input,
   &__textarea {
     width: 100%;
-    padding: 12px 15px 14px 45px;
-    font-size: 14px;
-    font-weight: 300;
-    color: #202020;
+    padding: rem(30) rem(5) rem(15);
+    color: $default-color;
+    font-size: rem(15);
     background-color: transparent;
-    border: 1px solid rgba($default-color, 0.2);
+    border-bottom: 1px solid $default-color;
     transition: $default-transition;
   }
 
   &__textarea {
-    height: 100px;
-    padding: 11px 13px;
+    height: rem(135);
+    margin-bottom: 2.64vw;
   }
 
-  &__asterisk {
-    position: absolute;
-    top: 6px;
-    right: 13px;
-    font-size: rem(18);
-    font-weight: 700;
-    color: $default-color;
-    opacity: 0.5;
-  }
-  
   &__input::placeholder,
   &__textarea::placeholder {
-    font-size: 12px;
-    color: #b6b6b6;
-  }
-  
-  &__input::placeholder {
-    text-transform: uppercase;
+    color: rgba($default-color, 0.6);
   }
 
   &__input:focus,
   &__input:active,
   &__textarea:focus,
   &__textarea:active {
-    border-color: $default-color;
-    background-color: $default-color;
+    border-color: $success-color;
+    color: $success-color;
     outline: none;
   }
 
-  &__icon {
-    position: absolute;
-    top: 11px;
-    left: 21px;
+  @include media-breakpoint-down(lg) {
+
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
   }
 
-  &__icon--name {
-    @extend %icon-service;
-  }
-  
-  &__icon--phone {
-    top: 9px;
-    left: 15px;
+  @include media-breakpoint-down(xs) {
 
-    @extend %icon-phone;
-  }
-
-  &__icon--mail {
-    top: 14px;
-
-    @extend %icon-mail;
-  }
-
-  @media screen and (max-width: $smDesktopWidth) {
-
-    &__title--footer {
-      text-align: center;
+    height: auto;
+    margin-top: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+      
+    &--mr13 {
+      margin-right: 0;
     }
-  }
 
-  @media screen and (max-width: $phoneWidth) {
-
-    &__wrap {
-      flex-direction: column;
+    &__input,
+    &__textarea {
+      font-size: rem(20);
     }
   }
 }

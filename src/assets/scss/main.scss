@@ -1,15 +1,13 @@
-// Bootstrap 4
+// Bootstrap 4 mixins
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
 // Utils
-@import "utils/libs";
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
 @import "utils/reset";
-@import "utils/sprites";
 @import "utils/animation";
 
 html {
@@ -17,14 +15,21 @@ html {
 	font-size: $mainFontSize;
 	color: $mainFontColor;
   height: 100%;
-  @media screen and (max-width: $desktopWidth) {
-		font-size: 14px;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 15px;
   }
-  @media screen and (max-width: $tableWidth) {
+
+  @include media-breakpoint-down(lg) {  // 992px
+    font-size: 14px;
+  }
+
+  @include media-breakpoint-down(md) {  // 768px
     font-size: 13px;
   }
-  @media screen and (max-width: $phoneWidth) {
-    // font-size: 12px;
+
+  @include media-breakpoint-down(sm) {  // 576px
+    font-size: 12px;
   }
 }
 
@@ -34,7 +39,6 @@ body {
   padding: 0;
   line-height: $mainLineHeight;
   font-family: $mainFont;
-	font-size: $mainFontSize;
   font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,23 +48,18 @@ body {
 
 
 // Modules
-
+@import "modules/brand";
 @import "modules/btn";
 @import "modules/carousel";
+@import "modules/contact";
 @import "modules/container";
+@import "modules/footer";
+@import "modules/form";
 @import "modules/header";
+@import "modules/icon";
 @import "modules/logo";
 @import "modules/popup";
 @import "modules/row";
 @import "modules/section";
 @import "modules/text";
 @import "modules/tile";
-
-
-@import "modules/link";
-@import "modules/banner";
-@import "modules/brcrumb";
-@import "modules/form";
-@import "modules/list";
-@import "modules/decor";
-@import "modules/footer";

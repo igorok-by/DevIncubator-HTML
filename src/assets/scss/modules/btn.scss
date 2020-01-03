@@ -41,4 +41,29 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  &--submit {
+    width: rem(244);
+    height: rem(53);
+    color: rgba($dark-color, .7);
+    font-family: $secondFont;
+    font-size: rem(18);
+    letter-spacing: rem(2.16);
+    border-radius: rem(2);
+    background-color: #6eeee4;
+  }
+
+  &--submit:hover {
+    color: $success-color;
+    background-color: transparent;
+    outline: 1px solid $success-color;
+  }
+
+  @include media-breakpoint-down(xs) {
+    
+    &--submit {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }

@@ -10,6 +10,15 @@
     padding-bottom: 5.9vw;
   }
 
+  &--pb110 {
+    padding-bottom: 7.65vw;
+  }
+
+  &--py110 {
+    padding-top: 7.65vw;
+    padding-bottom: 7.65vw;
+  }
+
   &--grey {
     background-color: rgba(239, 240, 242, 0.99);
   }
@@ -20,6 +29,10 @@
 
   &--lighter {
     background-color: #f9fbfb;
+  }
+
+  &--bg-1 {
+    background: top center / cover no-repeat url(/assets/img/bg-1.png);
   }
   
   &__title {
@@ -69,5 +82,53 @@
     width: rem(121);
     height: rem(156);
     background: center / contain no-repeat url(/assets/img/juice-1.png);
+  }
+
+  @include media-breakpoint-down(lg) {
+
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+
+    &--pb195 {
+      padding-bottom: 11.5vw;
+    }
+
+    &--pb85 {
+      padding-bottom: 4.5vw;
+    }
+
+    &--pb110 {
+      padding-bottom: 6vw;
+    }
+
+    &--py110 {
+      padding-top: 6vw;
+      padding-bottom: 6vw;
+    }
+
+    &__decor--juice {
+      bottom: rem(-80);
+      right: 0;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+      
+    &--pb195 {
+      padding-bottom: rem(150);
+    }
+
+    &__title--main {
+      line-height: rem(60);
+    }
+
+    &__title,
+    &__subtitle {
+      padding-right: 14px;
+      padding-left: 14px;
+    }
   }
 }

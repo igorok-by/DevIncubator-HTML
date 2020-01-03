@@ -1,0 +1,66 @@
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__tile {
+    position: relative;
+    width: 100%;
+  }
+  
+  &__tile--55prc {
+    flex: 0 0 55%;
+    max-width: 55%;
+  }
+  
+  &__tile--45prc {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  &__position {
+    height: 100%;
+    margin-left: 0.9vw;
+    padding: 2.5vw rem(22) 1.3vw;
+    box-shadow: 0 0 rem(3) rgba(21, 21, 21, 0.16);
+    background-color: rgba(#021623, 0.71);
+  }
+
+  &__map {
+    width: 100%;
+    height: rem(224);
+    margin-top: 1.6vw;
+  }
+
+  @include media-breakpoint-down(lg) {
+    
+    &__position {
+      margin-left: 0;
+      padding-left: 1.5vw;
+      padding-right: 1.5vw;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    
+    &__tile--to12xs {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    &__tile--55prc {
+      order: 2;
+    }
+    
+    &__tile--45prc {
+      order: 1;
+    }
+
+    &__position {
+      padding: 20px 14px;
+    }
+
+    &__map {
+      height: rem(350);
+    }
+  }
+}
