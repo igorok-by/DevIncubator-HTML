@@ -26,9 +26,9 @@
   &--light {
     width: rem(232);
     height: rem(53);
+    line-height: rem(53);
     border-radius: rem(2);
     border: rem(2) solid rgba($dark-color, .5);
-    line-height: rem(53);
     letter-spacing: 2.16px;
   }
 
@@ -60,7 +60,7 @@
   }
 
   @include media-breakpoint-down(xs) {
-    
+
     &--submit {
       margin-left: auto;
       margin-right: auto;

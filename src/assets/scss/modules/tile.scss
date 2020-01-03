@@ -49,8 +49,8 @@
     text-transform: uppercase;
     letter-spacing: rem(0.72);
     opacity: 0.8;
-    cursor: pointer;
     transition: $default-transition;
+    cursor: pointer;
   }
   
   &__open-arr {
@@ -90,9 +90,9 @@
     height: 100%;
     padding: rem(60) 7.99vw rem(55) 4.5vw;
     background-color: rgba($success-color, .97);
-    transition: $long-transition;
     opacity: 0;
     visibility: hidden;
+    transition: $long-transition;
   }
 
   &__back--little {
@@ -113,8 +113,8 @@
     height: rem(27);
     padding: rem(5);
     fill: rgba($dark-color, 0.4);
-    cursor: pointer;
     transition: $default-transition;
+    cursor: pointer;
     
     svg {
       width: 100%;
