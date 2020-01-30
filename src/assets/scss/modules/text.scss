@@ -32,48 +32,25 @@
     margin-top: 0;
   }
 
-  &--mb0 {
-    margin-bottom: 0;
+  $margin-bottoms: 0, 18, 22, 30;
+  @each $numb in $margin-bottoms {
+    &--pb#{$numb} {
+      margin-bottom: rem($numb);
+    }
   }
 
-  &--mb18 {
-    margin-bottom: rem(18);
-  }
-
-  &--mb22 {
-    margin-bottom: rem(22);
-  }
-
-  &--mb30 {
-    margin-bottom: rem(30);
-  }
-  
-  &--color-def {
-    color: $default-color;
-  }
-  
-  &--color-def-light {
-    color: rgba($default-color, 0.8);
-  }
-  
-  &--color-def-lighter {
-    color: rgba($default-color, 0.7);
-  }
-  
-  &--color-dark {
-    color: $dark-color;
-  }
-  
-  &--color-darker {
-    color: #272727;
-  }
-  
-  &--color-light {
-    color: rgba(#767070, 0.95);
-  }
-  
-  &--color-lighter {
-    color: rgba(#787878, 0.95);
+  $colors:
+    "def" $default-color,
+    "def-light" rgba($default-color, 0.8),
+    "def-lighter" rgba($default-color, 0.7),
+    "dark" $dark-color,
+    "darker" #272727,
+    "light" rgba(#767070, 0.95),
+    "lighter" rgba(#787878, 0.95);
+  @each $name, $value in $colors {
+    &--color-#{$name} {
+      color: $value;
+    }
   }
 
   &--fw-norm {
@@ -95,33 +72,23 @@
   &--lh22 {
     line-height: rem(22);
   }
-  
-  &--op91 {
-    opacity: 0.91;
+
+  $opacities: 70, 80, 91;
+  @each $numb in $opacities {
+    &--op#{$numb} {
+      opacity: $numb;
+    }
   }
-  
-  &--op80 {
-    opacity: 0.8;
-  }
-  
-  &--op70 {
-    opacity: 0.7;
-  }
-  
-  &--lspac090 {
-    letter-spacing: rem(0.9);
-  }
-  
-  &--lspac040 {
-    letter-spacing: rem(0.4);
-  }
-  
-  &--lspac032 {
-    letter-spacing: rem(0.32);
-  }
-  
-  &--lspac016 {
-    letter-spacing: rem(0.16);
+
+  $letter-spacings:
+    "090" 0.9,
+    "040" 0.4,
+    "032" 0.32,
+    "016" 0.16;
+  @each $name, $value in $letter-spacings {
+    &--lspac#{$name} {
+      letter-spacing: rem($value);
+    }
   }
 
   &--transf-none {

@@ -1,34 +1,27 @@
 .section {
-  padding-top: 8.7vw;
-  padding-bottom: 8.7vw;
-
-  &--pb195 {
-    padding-bottom: 13.54vw;
-  }
-
-  &--pb85 {
-    padding-bottom: 5.9vw;
-  }
-
-  &--pb110 {
-    padding-bottom: 7.65vw;
-  }
+  padding-top: vw(125);
+  padding-bottom: vw(125);
 
   &--py110 {
-    padding-top: 7.65vw;
-    padding-bottom: 7.65vw;
+    padding-top: vw(110);
+    padding-bottom: vw(110);
   }
 
-  &--grey {
-    background-color: rgba(239, 240, 242, 0.99);
+  $padding-bottoms: 85, 110, 195;
+  @each $numb in $padding-bottoms {
+    &--pb#{$numb} {
+      padding-bottom: vw($numb);
+    }
   }
 
-  &--light {
-    background-color: #f8fafa;
-  }
-
-  &--lighter {
-    background-color: #f9fbfb;
+  $background-colors:
+    "grey" rgba(239, 240, 242, 0.99),
+    "light" #f8fafa,
+    "lighter" #f9fbfb;
+  @each $name, $value in $background-colors {
+    &--#{$name} {
+      background-color: $value;
+    }
   }
 
   &--bg-1 {

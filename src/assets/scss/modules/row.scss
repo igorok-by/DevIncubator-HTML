@@ -23,19 +23,19 @@
   }
   
   &__col-5--mt130 {
-    margin-top: 9vw;
+    margin-top: vw(130);
   }
   
   &__col-7--mt172 {
-    margin-top: 11.95vw;
+    margin-top: vw(172);
   }
   
   &__col-6--mt140 {
-    margin-top: 9.75vw;
+    margin-top: vw(140);
   }
   
   &__col-6--mt116 {
-    margin-top: 8vw;
+    margin-top: vw(116);
   }
 
   @include media-breakpoint-down(lg) {
